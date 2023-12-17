@@ -11,7 +11,7 @@ public class AppDriver {
 
 		 public static void main(String[] args) throws FileNotFoundException 
 		 {
-			 Create my picture list
+			 //Create my picture list
 			 
 			 System.out.println("-------------1. Create my picture list: ");
 			 ArrayList<Picture> pictureList;
@@ -22,13 +22,12 @@ public class AppDriver {
 		    	 System.out.println("\t" + item.getName());
 		     }
 			 
-			 //------------Task 2. Create GUI
+			 //Create GUI
 			 
 			 System.out.println("\n-------------2. Create a GUI to show my hobbies, with a \"Next\" and \"Previous\" button for navigation");
 		     new GUI(pictureList);
 		     
-		     //COMPLETE THE FOLLOWING TASKS.
-		     //------------Task 3. Create and display my hobby list.
+		     //Create and display my hobby list.
 		     
 		     System.out.println("\n-------------3. Create my hobby list:\n");
 		     ArrayList<String> myHobbies = new ArrayList<String>();
@@ -38,15 +37,12 @@ public class AppDriver {
 		     myHobbies.add("sudoku");
 		     hobbiesArray(myHobbies);
 		     
-		     //------------Task 4. Create a list of students by reading from student_hobby.txt and display the list.
-		     //				  - Create a method to do so. 
-		     //				  - You will also need to create a Student class, which has at least 
-		     //				    two data fields: student name and an ArrayList of hobbies (String-type).
+		     //Create a list of students by reading from student_hobby.txt and display the list.
 	     
 		     System.out.println("\n-------------4. Create a Student list by reading from student_hobby.txt\n");
 		     ArrayList<Students> students = readFile("src/student_hobby.txt");
 		         
-		     //-------------Task 5. Sort the Student list by ascending order of student names
+		     //Sort the Student list by ascending order of student names
 		     
 		     System.out.println("\n-------------5. Sort the Student list by ascending order of student names\n");
 		     Collections.sort(students);
@@ -55,8 +51,7 @@ public class AppDriver {
 		            System.out.println(student);
 		        }
 		     
-		     //------------Task 6. Go through my hobby list to show how many students share the same hobby with me 
-		     //			    for each of my hobbies. 
+		     //Go through my hobby list to show how many students share the same hobby with me 
 		     
 		     System.out.println("\n-------------6. Go through my hobby list to show how many students share the same hobby\n");
 		     compareHobbies(myHobbies, students);
