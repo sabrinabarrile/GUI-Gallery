@@ -11,7 +11,7 @@ public class AppDriver {
 
 		 public static void main(String[] args) throws FileNotFoundException 
 		 {
-			 //------------Task 1. Create my picture list
+			 Create my picture list
 			 
 			 System.out.println("-------------1. Create my picture list: ");
 			 ArrayList<Picture> pictureList;
